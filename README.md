@@ -7,7 +7,7 @@
 - Sebastian Rosas 4 (Scrum Master)
 -------------------------------------------------------
 ## objetivo
-###1. Agregar tareas
+1. Agregar tareas
 -El usuario puede agregar tareas nuevas con un título no vacío.
 
 -Si el título está vacío o contiene solo espacios, el sistema debe mostrar un mensaje de error claro.
@@ -16,22 +16,22 @@
 
 -Cada tarea debe tener un ID único autogenerado.
 
-###Back-end:
+Back-end:
 
 -Validar el título.
 
 -Generar automáticamente el ID.
 
-###Front-end:
+Front-end:
 
 -Campo para ingresar título (y descripción).
 
 -Mostrar errores si el título es inválido.
 
-###2. Visualizar lista de tareas
+2. Visualizar lista de tareas
 -El usuario puede visualizar todas las tareas en una lista clara y ordenada.
 
-###Para cada tarea deben mostrarse:
+Para cada tarea deben mostrarse:
 
 -ID
 
@@ -43,11 +43,11 @@
 
 -El orden puede definirse en conjunto (por ejemplo: tareas más recientes primero, o pendientes primero).
 
-###Back-end:
+Back-end:
 
 -Retornar todas las tareas con sus datos, preferentemente ya ordenadas.
 
-###Front-end:
+Front-end:
 
 -Mostrar la lista de forma legible y con buen diseño.
 
@@ -58,7 +58,7 @@
 
 -Si se intenta marcar una tarea con un ID inexistente, el sistema debe mostrar un mensaje de error claro y no afectar otras tareas.
 
-###Back-end:
+Back-end:
 
 -Función que reciba el ID, actualice el estado, y maneje errores.
 
@@ -66,17 +66,17 @@
 
 -Permitir seleccionar una tarea y mostrar mensajes de éxito o error.
 
-###4. Eliminar tareas
+4. Eliminar tareas
 -El usuario puede eliminar tareas permanentemente.
 
 -Se identifican por su ID.
 
 -Si se intenta eliminar una tarea con un ID inexistente, el sistema debe mostrar un mensaje de error claro y no eliminar nada más.
 
-###Back-end:
+Back-end:
 
 -Función que reciba el ID y elimine la tarea, con manejo de errores.
 
-###Front-end:
+Front-end:
 
 -Interfaz que permita seleccionar una tarea para eliminar y muestre los mensajes correspondientes.
