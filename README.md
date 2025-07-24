@@ -7,79 +7,63 @@
 - Sebastian Rosas 4 (Scrum Master)
 -------------------------------------------------------
 ## objetivo
+Desarrollar una aplicación sencilla para la gestión de tareas, donde el usuario pueda:
+
+- Agregar tareas nuevas.
+
+- Visualizar una lista organizada.
+
+- Marcar tareas como completadas.
+
+- Eliminar tareas existentes.
+
+Este proyecto aplica buenas prácticas de Scrum y técnicas de XP como TDD, Pair Programming y Refactorización.
+-------------------------------------------------------
+##Funcionalidades y criterios
 1. Agregar tareas
-- El usuario puede agregar tareas nuevas con un título no vacío.
+- Crear tareas con título obligatorio (no vacío ni solo espacios).
 
-- Si el título está vacío o contiene solo espacios, el sistema debe mostrar un mensaje de error claro.
+- Campo opcional para descripción.
 
-- (Opcional): Se puede añadir una descripción adicional a la tarea.
+- Cada tarea con ID único autogenerado.
 
-- Cada tarea debe tener un ID único autogenerado.
+ -Mensaje de error si el título no es válido.
 
-Back-end:
-
-- Validar el título.
-
-- Generar automáticamente el ID.
-
-Front-end:
-
-- Campo para ingresar título (y descripción).
-
-- Mostrar errores si el título es inválido.
+Back-end: validación del título y generación del ID.
+Front-end: formulario de entrada y manejo de errores.
 
 2. Visualizar lista de tareas
-   
--El usuario puede visualizar todas las tareas en una lista clara y ordenada.
+- Mostrar lista de tareas con: ID, Título, Descripción (si tiene) y Estado (Pendiente/Completada).
 
-Para cada tarea deben mostrarse:
+- Lista ordenada (por ejemplo: pendientes primero o tareas más recientes).
 
-- ID
-
-- Título
-
--Descripción (si tiene)
-
-- Estado: Pendiente o Completada
-
-- El orden puede definirse en conjunto (por ejemplo: tareas más recientes primero, o pendientes primero).
-
-Back-end:
-
-- Retornar todas las tareas con sus datos, preferentemente ya ordenadas.
-
-Front-end:
-
-- Mostrar la lista de forma legible y con buen diseño.
+Back-end: devolver tareas con datos completos y ordenados.
+Front-end: vista clara, limpia y legible.
 
 3. Marcar tareas como completadas
-   
-- El usuario puede cambiar el estado de una tarea a "Completada".
+- Cambiar estado de una tarea a “Completada” usando su ID.
 
-- Se debe identificar la tarea por su ID.
+- Mostrar mensaje si el ID no existe.
 
-- Si se intenta marcar una tarea con un ID inexistente, el sistema debe mostrar un mensaje de error claro y no afectar otras tareas.
-
-Back-end:
-
-- Función que reciba el ID, actualice el estado, y maneje errores.
-
-Front-end:
-
-- Permitir seleccionar una tarea y mostrar mensajes de éxito o error.
+Back-end: función para actualizar estado, con manejo de errores.
+Front-end: interfaz para marcar tarea y mostrar mensajes de resultado.
 
 4. Eliminar tareas
-   
-- El usuario puede eliminar tareas permanentemente.
+- Eliminar tarea permanente por su ID.
 
-- Se identifican por su ID.
+- Mensaje de error si el ID no existe.
 
-- Si se intenta eliminar una tarea con un ID inexistente, el sistema debe mostrar un mensaje de error claro y no eliminar nada más.
-
-Back-end:
-
-- Función que reciba el ID y elimine la tarea, con manejo de errores.
-
-Front-end:
-
-- Interfaz que permita seleccionar una tarea para eliminar y muestre los mensajes correspondientes.
+Back-end: función de eliminación con validación.
+Front-end: botón o acción para eliminar y mostrar mensajes.
+-------------------------------------------------------
+##Sprint Planning (Planificación del Sprint)
+| Tarea                                   | Responsable       | Técnica XP aplicada    |
+| --------------------------------------- | ----------------- | ---------------------- |
+| Configurar estructura base del proyecto | Dev 1             | TDD + Pair Programming |
+| encargado del back-end con javaScript   | Dev 2             | TDD                    |
+| encargado del estilo de la apilicacion  | Dev 3             | TDD                    |
+| Crear pruebas unitarias                 | Todos             | TDD                    |
+| Refactorizar código repetido            | Dev 2 + Dev 3     | Refactor               |
+| Grabar fragmento de Pair Programming    | PO + Devs         | Evidencia XP           |
+| Crear README con historia y criterios   | PO + Scrum Master | Documentación          |
+| Preparar video final con explicación    | Todo el equipo    | Entregable obligatorio |
