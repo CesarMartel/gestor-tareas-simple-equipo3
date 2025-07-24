@@ -24,8 +24,6 @@ Este proyecto aplica buenas prácticas de Scrum y técnicas de XP como TDD, Pair
 
 - Campo opcional para descripción.
 
-- Cada tarea con ID único autogenerado.
-
  -Mensaje de error si el título no es válido.
 
 Back-end: validación del título y generación del ID.
@@ -42,17 +40,13 @@ Back-end: devolver tareas con datos completos y ordenados.
 Front-end: vista clara, limpia y legible.
 
 3. Marcar tareas como completadas
-- Cambiar estado de una tarea a “Completada” usando su ID.
-
-- Mostrar mensaje si el ID no existe.
+- Cambiar estado de una tarea a “Completada” .
 
 Back-end: función para actualizar estado, con manejo de errores.
 Front-end: interfaz para marcar tarea y mostrar mensajes de resultado.
 
 4. Eliminar tareas
-- Eliminar tarea permanente por su ID.
-
-- Mensaje de error si el ID no existe.
+- Eliminar tarea permanente.
 
 Back-end: función de eliminación con validación.
 
