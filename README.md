@@ -8,75 +8,75 @@
 -------------------------------------------------------
 ## objetivo
 1. Agregar tareas
--El usuario puede agregar tareas nuevas con un título no vacío.
+- El usuario puede agregar tareas nuevas con un título no vacío.
 
--Si el título está vacío o contiene solo espacios, el sistema debe mostrar un mensaje de error claro.
+- Si el título está vacío o contiene solo espacios, el sistema debe mostrar un mensaje de error claro.
 
--(Opcional): Se puede añadir una descripción adicional a la tarea.
+- (Opcional): Se puede añadir una descripción adicional a la tarea.
 
--Cada tarea debe tener un ID único autogenerado.
+- Cada tarea debe tener un ID único autogenerado.
 
 Back-end:
 
--Validar el título.
+- Validar el título.
 
--Generar automáticamente el ID.
+- Generar automáticamente el ID.
 
 Front-end:
 
--Campo para ingresar título (y descripción).
+- Campo para ingresar título (y descripción).
 
--Mostrar errores si el título es inválido.
+- Mostrar errores si el título es inválido.
 
 2. Visualizar lista de tareas
 -El usuario puede visualizar todas las tareas en una lista clara y ordenada.
 
 Para cada tarea deben mostrarse:
 
--ID
+- ID
 
--Título
+- Título
 
 -Descripción (si tiene)
 
--Estado: Pendiente o Completada
+- Estado: Pendiente o Completada
 
--El orden puede definirse en conjunto (por ejemplo: tareas más recientes primero, o pendientes primero).
+- El orden puede definirse en conjunto (por ejemplo: tareas más recientes primero, o pendientes primero).
 
 Back-end:
 
--Retornar todas las tareas con sus datos, preferentemente ya ordenadas.
+- Retornar todas las tareas con sus datos, preferentemente ya ordenadas.
 
 Front-end:
 
--Mostrar la lista de forma legible y con buen diseño.
+- Mostrar la lista de forma legible y con buen diseño.
 
-###3. Marcar tareas como completadas
--El usuario puede cambiar el estado de una tarea a "Completada".
+3. Marcar tareas como completadas
+- El usuario puede cambiar el estado de una tarea a "Completada".
 
--Se debe identificar la tarea por su ID.
+- Se debe identificar la tarea por su ID.
 
--Si se intenta marcar una tarea con un ID inexistente, el sistema debe mostrar un mensaje de error claro y no afectar otras tareas.
+- Si se intenta marcar una tarea con un ID inexistente, el sistema debe mostrar un mensaje de error claro y no afectar otras tareas.
 
 Back-end:
 
--Función que reciba el ID, actualice el estado, y maneje errores.
+- Función que reciba el ID, actualice el estado, y maneje errores.
 
-###Front-end:
+Front-end:
 
--Permitir seleccionar una tarea y mostrar mensajes de éxito o error.
+- Permitir seleccionar una tarea y mostrar mensajes de éxito o error.
 
 4. Eliminar tareas
--El usuario puede eliminar tareas permanentemente.
+- El usuario puede eliminar tareas permanentemente.
 
--Se identifican por su ID.
+- Se identifican por su ID.
 
--Si se intenta eliminar una tarea con un ID inexistente, el sistema debe mostrar un mensaje de error claro y no eliminar nada más.
+- Si se intenta eliminar una tarea con un ID inexistente, el sistema debe mostrar un mensaje de error claro y no eliminar nada más.
 
 Back-end:
 
--Función que reciba el ID y elimine la tarea, con manejo de errores.
+- Función que reciba el ID y elimine la tarea, con manejo de errores.
 
 Front-end:
 
--Interfaz que permita seleccionar una tarea para eliminar y muestre los mensajes correspondientes.
+- Interfaz que permita seleccionar una tarea para eliminar y muestre los mensajes correspondientes.
