@@ -31,7 +31,7 @@ Back-end: validación del título y generación del ID.
 Front-end: formulario de entrada y manejo de errores.
 
 2. Visualizar lista de tareas
-- Mostrar lista de tareas con: ID, Título, Descripción (si tiene) y Estado (Pendiente/Completada).
+- Mostrar lista de tareas con:Título, Descripción (si tiene) y Estado (Pendiente/Completada).
 
 - Lista ordenada (por ejemplo: pendientes primero o tareas más recientes).
 
