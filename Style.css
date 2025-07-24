@@ -44,6 +44,13 @@ li {
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
+  gap: 10px;
+}
+
+li span {
+  flex: 1;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .completed {
@@ -51,23 +58,26 @@ li {
   color: gray;
 }
 
-.delete-btn {
+.delete-btn, .complete-btn {
+  width: 80px;
+  font-size: 12px;
+  text-align: center;
   background-color: #dc3545;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 5px;
   cursor: pointer;
   border-radius: 5px;
+  flex-shrink: 0;
 }
 
 .complete-btn {
   background-color: #007bff;
-  color: white;
-  border: none;
-  margin-left: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+  margin-left: 5px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
 }
 
 .complete-btn:hover {
