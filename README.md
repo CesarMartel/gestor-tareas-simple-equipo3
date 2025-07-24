@@ -29,6 +29,7 @@ Este proyecto aplica buenas prácticas de Scrum y técnicas de XP como TDD, Pair
  -Mensaje de error si el título no es válido.
 
 Back-end: validación del título y generación del ID.
+
 Front-end: formulario de entrada y manejo de errores.
 
 2. Visualizar lista de tareas
@@ -37,6 +38,7 @@ Front-end: formulario de entrada y manejo de errores.
 - Lista ordenada (por ejemplo: pendientes primero o tareas más recientes).
 
 Back-end: devolver tareas con datos completos y ordenados.
+
 Front-end: vista clara, limpia y legible.
 
 3. Marcar tareas como completadas
@@ -53,6 +55,7 @@ Front-end: interfaz para marcar tarea y mostrar mensajes de resultado.
 - Mensaje de error si el ID no existe.
 
 Back-end: función de eliminación con validación.
+
 Front-end: botón o acción para eliminar y mostrar mensajes.
 -------------------------------------------------------
 ##Sprint Planning (Planificación del Sprint)
