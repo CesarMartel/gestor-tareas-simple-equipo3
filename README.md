@@ -16,7 +16,6 @@ Desarrollar una aplicación sencilla para la gestión de tareas, donde el usuari
 - Marcar tareas como completadas.
 
 - Eliminar tareas existentes.
-
 Este proyecto aplica buenas prácticas de Scrum y técnicas de XP como TDD, Pair Programming y Refactorización.
 -------------------------------------------------------
 ##Funcionalidades y criterios
