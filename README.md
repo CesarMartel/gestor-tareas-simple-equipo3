@@ -29,6 +29,7 @@ Front-end:
 - Mostrar errores si el título es inválido.
 
 2. Visualizar lista de tareas
+   
 -El usuario puede visualizar todas las tareas en una lista clara y ordenada.
 
 Para cada tarea deben mostrarse:
@@ -52,6 +53,7 @@ Front-end:
 - Mostrar la lista de forma legible y con buen diseño.
 
 3. Marcar tareas como completadas
+   
 - El usuario puede cambiar el estado de una tarea a "Completada".
 
 - Se debe identificar la tarea por su ID.
@@ -67,6 +69,7 @@ Front-end:
 - Permitir seleccionar una tarea y mostrar mensajes de éxito o error.
 
 4. Eliminar tareas
+   
 - El usuario puede eliminar tareas permanentemente.
 
 - Se identifican por su ID.
